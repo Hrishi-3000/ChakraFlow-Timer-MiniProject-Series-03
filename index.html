@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-switcher">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1><span class="neon-text">Chakra </span> Flow Timer</h1>
+            <div class="session-indicator">
+                <span id="session-type">Work</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        
+        <div class="controls">
+            <button id="start" class="btn btn-primary">
+                <i class="fas fa-play"></i> Start
+            </button>
+            <button id="pause" class="btn btn-secondary">
+                <i class="fas fa-pause"></i> Pause
+            </button>
+            <button id="reset" class="btn btn-tertiary">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+        
+        <div class="settings">
+            <div class="setting">
+                <label for="work-duration">Work (minutes):</label>
+                <input type="number" id="work-duration" min="1" max="60" value="25">
+            </div>
+            <div class="setting">
+                <label for="break-duration">Break (minutes):</label>
+                <input type="number" id="break-duration" min="1" max="30" value="5">
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hrishikesh-shahane-a0a19a258/" class="social-icon" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://hrishikesh-shahane-portfolio.vercel.app/" class="social-icon" target="_blank" aria-label="Website" rel="noopener noreferrer">
+                <i class="fas fa-globe"></i>
+            </a>
+            <a href="https://www.instagram.com/hrishikesh__2003/" class="social-icon" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Hrishi-3000" class="social-icon" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.blogger.com/profile/06534898699057353590" class="social-icon" target="_blank" aria-label="Tech Blog" rel="noopener noreferrer">
+                <i class="fas fa-blog"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
