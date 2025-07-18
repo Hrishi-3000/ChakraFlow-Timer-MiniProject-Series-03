@@ -2,6 +2,8 @@
 
 A Pomodoro timer that aligns work/break cycles with chakra energy for enhanced productivity and mindfulness.
 
+Website Link: https://chakra-flow-timer-mini-project-seri.vercel.app/
+
 ##  Features
 
 - **Chakra-Aligned Sessions**
